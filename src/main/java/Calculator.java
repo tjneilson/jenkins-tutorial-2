@@ -45,7 +45,7 @@ class Calculator {
 
     private int fibonacciHelper(int n) {
         if (n > 2) {
-            return fibonacciHelper(n - 1) + n;
+            return fibonacciHelper(n - 1) + fibonacciHelper(n - 2);
         } if (n == 0) {
             return 0;
         } else {
